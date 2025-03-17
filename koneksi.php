@@ -6,7 +6,6 @@ $password = "";
 
 $conn = mysqli_connect($servername, $username, $password, $database);
 
-2 references
 function ambildata ($query): array
 {
     $conn = $GLOBALS['conn'];
