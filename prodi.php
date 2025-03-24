@@ -1,18 +1,8 @@
 <?php
-$servername = "localhost";
-$database = "4a mi";
-$username = "root";
-$password = "";
-
-$conn = mysqli_connect($servername, $username, $password, $database);
+include "koneksi.php";
 
 $query = "SELECT * FROM prodi";
-$hasil = mysqli_query($conn, $query);
-
-$data = [];
-while ($baris = mysqli_fetch_assoc($hasil)) {
-    $data[] = $baris;
-}
+$data = ambildata($query);
 
 ?>
 
