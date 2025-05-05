@@ -54,10 +54,9 @@ include "template/sidebar.php"
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>NIM</th>
                                     <th>Nama</th>
-                                    <th>Telp</th>
-                                    <th>Prodi</th>
+                                    <th>Kaprodi</th>
+                                    <th>Jurusan</th>
                                 </tr>
                             </thead>
                             <?php
@@ -65,13 +64,9 @@ include "template/sidebar.php"
                             foreach ($data as $d) : ?>
                                 <tr>
                                     <td><?php echo $i++; ?></td>
-                                    <td><?php echo $d["nim"] ?></td>
                                     <td><?php echo $d["nama"] ?></td>
-                                    <td><?php echo $d["telp"] ?></td>
-                                    <td><?php echo $d["namaProdi"] ?></td>
-                                    <td><a href="deletemahasiswa.php?nim=<?= $d['nim']; ?>"
-                                            onclick="return confirm('Yakin ingin hapus?')" class="btn btn-danger">Delete</a>
-                                        <a href="editmahasiswa.php?nim=<?= $d['nim']; ?>" class="btn btn-warning">Edit</a>
+                                    <td><?php echo $d["kaprodi"] ?></td>
+                                    <td><?php echo $d["jurusan"] ?></td>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>
