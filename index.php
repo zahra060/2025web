@@ -46,7 +46,10 @@ include "template/sidebar.php"
             <div class="col-md-12">
                 <div class="card mb-4">
                     <div class="card-header">
-                        <h3 class="card-title">Table Mahasiswa</h3>
+                        <h3 class="card-title">Data Mahasiswa</h3>
+                        <div class="card-tools">
+                            <a href="tambahmahasiswa.php" class="btn btn-primary">Tambah</a>
+                        </div>
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
